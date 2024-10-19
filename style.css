@@ -1,21 +1,191 @@
+
+
+
 body {
   font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
-  background-color: #faf9f6;
+  margin: 0px 40px 0 40px;
+  background-color: #6b06ff;
+  color: white;
   display: flex;
   flex-direction: column;
   min-height: 95vh;
 }
+
+p {
+  color: #dac0ff;
+}
+
 .main {
-  flex: 1;
+  flex: 2;
+  display: inline-block;
+
+}
+
+.navbar {
+  display: flex;
+  height: 64px;
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 64px;
+  text-align: right;
+}
+
+.tab{
+  margin-top: 28px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.menu {
+  display: none;
 }
 
 h1 {
   font-size: 5rem;
+  flex: 2;
+}
+
+span {
+  color: #ff62c8;
+}
+
+.cards {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  display: block;
+  width: 40%;
+  margin-left: 20px;
+}
+
+.tile-image{
+  display: flex;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-title {
+  width: 100%;
+}
+
+.card-text {
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
 footer {
+  flex: 2;
   text-align: right;
-  color: midnightblue;
 }
 
+p.footer {
+  color: #28e192;
+}
+
+@media (max-width: 480px) {
+  body {
+    display: block;
+    margin: 0px 16px 0 16px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tab {
+    display: none;
+    
+  }
+  .menu {
+    display: inline-block;
+  }
+  h1 {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+  .cards {
+    display: block;
+  }
+  .card {
+    display: block;
+    flex: 2;
+    margin-bottom: 40px;
+  }
+  .tile-image{
+    display: block;
+    width: 100%;
+  }
+  .content {
+    display: block;
+    width: 100%;
+    margin: 12px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px){
+  body {
+    display: block;
+    margin: 0px 24px 0 24px;
+  }
+  .tab{
+    margin-top: 28px;
+    display: inline-block;
+    width: 72px;
+    text-align: right;
+    vertical-align: bottom;
+  }
+  h1 {
+    font-size: 3.4rem;
+    width: 100%;
+  }
+  .cards {
+    display: block;
+  }
+  .card {
+    flex: 2;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .cards {
+    display: flex;
+  }
+  .card {
+    display: block;
+    flex: 1;
+    margin-right: 40px;
+  }
+  .tile-image{
+    display: block;
+    width: 100%;
+  }
+  .content {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
